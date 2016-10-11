@@ -50,10 +50,52 @@ Part 1: Discussion
 """
 
 
-# Parts 2 through 5:
-# Create your classes and class methods
+# Parts 2
+#1. 
+class Student(object):
+
+    def __init__(self, first_name, last_name, address):
+        """Initialize student attributes."""
+        self.first_name = first_name
+        self.last_name = last_name
+        self.address = address
+
+#2. 
+class Question(object):
 
 
-dog = ClassExample() #<== I've just assigned dog to the ClassExample class
-dog.species = 'dog'
+    def __init__(self, question, correct_answer):
+        """Initialize question attributes."""
+        self.question = question
+        self.correct_answer = correct_answer
+        
+        def ask_and_evaluate(self):
+            print self.question
+            answer = raw_input('Please answer the question:')
+            if answer == self.correct_answer:
+                print True
+            else:
+                print False
+#3. 
+        def administrator(self):
+            score = 0
+            for self.correct_answer in self.question:
+                if self.ask_and_evaluate() == True:
+                    score += 1
+            return score
+
+class Exam(Question):
+
+    def __init__(self, name):
+        super(Exam, self).__init__(question, correct_answer)
+        self.name = name
+
+
+        def add_question(self):
+            return "The new question is: %s. The answer is %s" % (question, correct_answer)
+
+
+exam = Exam('midterm')
+exam.add_question('What is the method for adding an element to a set?', '.add()')
+
 
